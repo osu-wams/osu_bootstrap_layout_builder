@@ -51,11 +51,7 @@
    public function buildStyleFormElements(array &$form, FormStateInterface $form_state, $storage) {
      $form['min_height'] = [
        '#type' => 'radios',
-       // '#type' => 'range',
        '#title' => $this->t('Minimum height'),
-       // '#min' => 0,
-       // '#max' => $this->getStyleOptionsCount('min_height'),
-       // '#step' => 1,
        '#options' => $this->getStyleOptions('min_height'),
        '#default_value' => $storage['min_height']['class'] ?? 0,
        '#validated' => TRUE,
@@ -63,8 +59,6 @@
          'class' => ['field-items-alignment', 'bs_input-boxes'],
        ],
      ];
-
-     // $form['#attached']['drupalSettings']['bootstrap_styles']['sizing']['min_height'] = array_keys($this->getStyleOptions('min_height'));
 
      // Add icons to the container types.
      foreach ($form['min_height']['#options'] as $key => $value) {
@@ -81,7 +75,6 @@
      return [
        'min_height' => [
          'class' => $group_elements['min_height'],
-         // 'class' => $this->getStyleOptionClassByIndex('min_height', $group_elements['min_height']),
        ],
      ];
    }
@@ -97,9 +90,6 @@
 
      // Add the classes to the build.
      $build = $this->addClassesToBuild($build, $classes);
-
-     // Attach blb-classes to the build.
-     $build['#attached']['library'][] = 'osu_bootstrap_layout_builder/plugin.min_height.build';
 
      return $build;
    }
