@@ -1,5 +1,0 @@
-# items_alignment
-plugin.items_alignment.build:
-  css:
-    theme:
-      css/blb_example_classes/positioning-items-alignment.css: { }
