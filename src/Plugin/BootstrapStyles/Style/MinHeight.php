@@ -60,11 +60,6 @@ class MinHeight extends StylePluginBase {
       ],
     ];
 
-    // Add icons to the container types.
-    foreach ($form['min_height']['#options'] as $key => $value) {
-      $form['min_height']['#options'][$key] = '<span class="input-icon ' . $key . '"></span>' . $value;
-    }
-
     return $form;
   }
 
