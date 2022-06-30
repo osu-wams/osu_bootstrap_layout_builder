@@ -1,4 +1,4 @@
-name: "OSU bootstrap layout builder"
+name: "OSU Bootstrap Layout Builder"
 description: "Adds OSU customizations to bootstrap layout builder"
 package: Custom
 type: module
