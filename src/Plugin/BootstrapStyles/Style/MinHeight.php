@@ -83,8 +83,11 @@ class MinHeight extends StylePluginBase {
       $classes[] = $storage['min_height']['class'];
     }
 
+
     // Add the classes to the build.
     $build = $this->addClassesToBuild($build, $classes);
+
+    $build['#attached']['library'][] = 'osu_bootstrap_layout_builder/plugin.min_height.build';
 
     return $build;
   }
