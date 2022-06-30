@@ -1,4 +1,4 @@
 plugin.min_height.build:
   css:
     theme:
-      src/css/flex.css: { }
+      src/css/min-height-flex.css: { }
