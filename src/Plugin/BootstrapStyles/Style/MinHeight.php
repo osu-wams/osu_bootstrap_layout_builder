@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
 * Style MinHeight class.
 *
-* @package Drupal\bootstrap_layout_builder\Plugin\Style
+* @package Drupal\osu_bootstrap_layout_builder\Plugin\Style
 *
 * @Style(
 *   id = "min_height",

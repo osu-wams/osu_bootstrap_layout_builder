@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Style group Sizing class.
  *
- * @package Drupal\bootstrap_layout_builder\Plugin\StylesGroup
+ * @package Drupal\osu_bootstrap_layout_builder\Plugin\StylesGroup
  *
  * @StylesGroup(
  *   id = "sizing",
