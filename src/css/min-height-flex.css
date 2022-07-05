@@ -1,0 +1,7 @@
+#drupal-off-canvas .bs_input-boxes .fieldset-wrapper > div {
+  flex-wrap: wrap;
+}
+
+#drupal-off-canvas .bs_input-boxes .fieldset-wrapper > div > div {
+  flex: auto;
+}

@@ -1,0 +1,7 @@
+name: "OSU Bootstrap Layout Builder"
+description: "Adds OSU customizations to bootstrap layout builder"
+package: Custom
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:bootstrap_layout_builder
