@@ -56,7 +56,7 @@ class MinHeight extends StylePluginBase {
       '#default_value' => $storage['min_height']['class'] ?? 0,
       '#validated' => TRUE,
       '#attributes' => [
-        'class' => ['bs_input-boxes'],
+        'class' => ['bs_input-boxes', 'field-min-height'],
       ],
     ];
 
