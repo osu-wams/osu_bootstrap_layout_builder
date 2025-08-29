@@ -7,4 +7,3 @@ version: 1.0.2
 dependencies:
   - bootstrap_styles:bootstrap_styles
   - bootstrap_layout_builder:bootstrap_layout_builder
-

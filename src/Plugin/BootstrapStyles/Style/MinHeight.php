@@ -2,26 +2,27 @@
 
 namespace Drupal\osu_bootstrap_layout_builder\Plugin\BootstrapStyles\Style;
 
+use Drupal\bootstrap_styles\Annotation\Style;
 use Drupal\bootstrap_styles\Style\StylePluginBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
-* Style MinHeight class.
-*
-* @package Drupal\osu_bootstrap_layout_builder\Plugin\Style
-*
-* @Style(
-*   id = "min_height",
-*   title = @Translation("Minimum height"),
-*   group_id = "sizing",
-*   weight = 0
-* )
-*/
+ * Style MinHeight class.
+ *
+ * @package Drupal\osu_bootstrap_layout_builder\Plugin\Style
+ *
+ * @Style(
+ *   id = "min_height",
+ *   title = @Translation("Minimum height"),
+ *   group_id = "sizing",
+ *   weight = 0
+ * )
+ */
 class MinHeight extends StylePluginBase {
 
   /**
-  * {@inheritDoc}
-  */
+   * {@inheritDoc}
+   */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $config = $this->config();
 
@@ -37,8 +38,8 @@ class MinHeight extends StylePluginBase {
   }
 
   /**
-  * {@inheritDoc}
-  */
+   * {@inheritDoc}
+   */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->config()
       ->set('min_height', $form_state->getValue('min_height'))
@@ -46,8 +47,8 @@ class MinHeight extends StylePluginBase {
   }
 
   /**
-  * {@inheritDoc}
-  */
+   * {@inheritDoc}
+   */
   public function buildStyleFormElements(array &$form, FormStateInterface $form_state, $storage) {
     $form['min_height'] = [
       '#type' => 'radios',
@@ -64,8 +65,8 @@ class MinHeight extends StylePluginBase {
   }
 
   /**
-  * {@inheritDoc}
-  */
+   * {@inheritDoc}
+   */
   public function submitStyleFormElements(array $group_elements) {
     return [
       'min_height' => [
@@ -75,14 +76,13 @@ class MinHeight extends StylePluginBase {
   }
 
   /**
-  * {@inheritDoc}
-  */
+   * {@inheritDoc}
+   */
   public function build(array $build, array $storage, $theme_wrapper = NULL) {
     $classes = [];
     if (isset($storage['min_height']['class'])) {
       $classes[] = $storage['min_height']['class'];
     }
-
 
     // Add the classes to the build.
     $build = $this->addClassesToBuild($build, $classes);

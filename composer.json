@@ -8,10 +8,25 @@
     {
       "name": "Alex Ruef",
       "email": "alex.ruef@oregonstate.edu"
+    },
+    {
+      "name": "Matthew Brabham",
+      "email": "matthew.brabham@oregonstate.edu"
     }
   ],
-  "require": {
+  "scripts": {
+    "cs-checkstyle": "phpcs -q --report=checkstyle",
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
   },
   "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+    "squizlabs/php_codesniffer": "^3.13",
+    "drupal/coder": "^8.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }

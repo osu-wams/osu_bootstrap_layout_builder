@@ -2,6 +2,7 @@
 
 namespace Drupal\osu_bootstrap_layout_builder\Plugin\BootstrapStyles\StylesGroup;
 
+use Drupal\bootstrap_styles\Annotation\StylesGroup;
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupPluginBase;
 use Drupal\Core\Form\FormStateInterface;
 
